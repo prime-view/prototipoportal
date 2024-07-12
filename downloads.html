@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>MPF - Portal Único</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fa/css/font-awesome.min.css">
+ 	<link href="https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap" rel="stylesheet"> 
+ 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet"> 
+
+    
+  </head>
+  <body>
+  	<!-- container geral da pagina -->
+  	<div class="container content shadow-lg full-height">
+	    <header>
+	    	<!-- Navbar -->
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<!-- logomarca -->
+				<a class="navbar-brand" href="#">			  				  	
+			  		<img  height="70" src="img/logo_portal.png">
+			  	</a>
+			  	<!-- ./logomarca -->
+
+			  	<!-- botao collapse -->
+			  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    	<span class="navbar-toggler-icon"></span>
+			  	</button>
+			  	<!-- ./botao collapse -->
+
+
+
+			  	<div class="collapse navbar-collapse ml-4" id="navbarSupportedContent">
+			  		<!-- menu -->
+			    	<ul class="navbar-nav mr-auto">			      
+			      		<li class="nav-item active mr-3 mb-2 mt-2">
+			        		<a class="nav-link btn btn-light btn-menu-portal" href="index.html">
+			        			<div class="mt-2">
+				        			<i class="fa fa-home fa-lg " aria-hidden="true"></i>
+				        			Página Inicial
+			        			</div>
+			        		</a>
+			      		</li>
+			      
+			      		<li class="nav-item active mr-3 mb-2 mt-2">
+			        		<a class="nav-link btn btn-light btn-menu-portal" href="solicitacoes.html">
+			        			<div class="mt-2">
+									<i class="fa fa-upload" aria-hidden="true"></i>
+			        				Solicitações
+			        			</div>
+			    			</a>
+			      		</li>
+
+			      		<li class="nav-item active mr-3 mb-2 mt-2">
+			        		<a class="nav-link btn btn-light btn-menu-portal" href="downloads.html">
+			        			<div class="mt-2">
+									<i class="fa fa-download" aria-hidden="true"></i>		        	
+			        				Downloads
+			        			</div>
+			       			</a>
+			      		</li>		      
+			    	</ul>
+			    	<!-- ./menu -->
+
+			    	<!-- usuario logado -->
+					<div class="dropdown ml-auto d-none d-sm-block dropdown-menu-left ">
+				  		<a class="nav-link btn btn-light btn-menu-portal" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<span data-letters="WN"> Waelson Negreiros</span>				  	
+				  		</a>
+				  		<div class="dropdown-menu content" aria-labelledby="dropdownMenuButton">
+				  	  		<div class="dropdown-item">
+				  	  			<span data-letters="WN"> <i>Waelson Negreiros</i></span>				  	  	
+				  	  		</div>	
+				  	  		<div class="dropdown-divider"></div>
+				      		<a class="dropdown-item" href="meus_dados.html">
+				      			<i class="fa fa-pencil fa-fw"></i>
+				      			Meus Dados
+				      		</a>
+				      		<div class="dropdown-divider"></div>
+				      		<a class="dropdown-item" href="login.html">
+				      			<i class="fa fa-sign-out" aria-hidden="true"></i>
+				      	 		Sair
+				      		</a>
+				  		</div>
+					</div>	
+					<!-- ./usuario logado -->
+			  </div> 		  
+			</nav>
+			<!-- ./navbar -->
+	    </header>
+
+
+	    <!-- conteudo da pagina -->
+		<main class="container mt-2">
+			<div class="row">
+				<div class="col-12 text-right">
+					<div class="1d-none d-sm-block">
+						<nav aria-label="breadcrumb">
+						  <ol class="breadcrumb">
+						    <li class="breadcrumb-item active" style="color: #002d41" aria-current="page">
+						    	<i class="fa fa-home fa-lg" style="color: #002d41" aria-hidden="true"></i> 
+						    	Página Inicial / Downloads
+							</li>
+						  </ol>
+						</nav>
+					</div>	
+				</div>
+			</div>
+
+			<div class="row justify-content-center" >
+				<div class="col-12 flex-fill">
+					<!-- row -->
+					<div class="row mb-5 mt-2">
+
+						<!-- Menu -->
+						<div class="col-lg-3">
+						    <div class="list-group" id="list-tab" role="tablist">
+						    	<div class="list-group-item titulo_filtro">
+						    		<i class="fa fa-filter" aria-hidden="true"></i>
+						    		 Filtrar por Situação
+						    	</div>	
+								<a class="list-group-item btn-light" href="#list-home">
+									<i class="fa fa-globe" aria-hidden="true"></i>
+									 Todas
+								</a>		
+						      	<a class="list-group-item btn-light" href="#list-settings">
+						      		<i class="fa fa-check-circle-o" aria-hidden="true"></i>
+						      		 Disponível
+						      	</a>
+						      	<a class="list-group-item btn-light" href="#list-settings">
+						      		<i class="fa fa-times-circle" aria-hidden="true"></i>
+						      		 Expiradas
+						      	</a>
+
+						    </div>					
+						</div>
+						<!-- ./Menu -->
+
+						<!-- Conteudo -->
+						<div class="col-lg-9">
+							<div class="row mt-3">
+								<div class="col-lg-12">
+									<div class="row">
+										<div class="col-lg-12 mt-2">
+											<h5>
+												<i class="fa fa-filter" aria-hidden="true"></i>
+												 Filtrando por 'Todas'
+											</h5>
+										</div>								
+									</div>									
+								</div>
+							</div>
+							
+							<div class="row mt-4">
+								<div class="col-lg-12">
+									<div class="table-responsive">
+									  <table class="table">
+										<thead>
+											<tr>
+											  <th scope="col">Situação</th>
+											  <th scope="col">Data Expiração</th>
+											  <th scope="col">Referência</th>
+											  <th scope="col">Ação</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+											  <th scope="row">
+											  	<h6><span class="badge badge-success" style="width: 85px; height: 30px; padding-top: 9px;">Disponível</span></h6>
+											  </th>
+											  <td>00000/2020</td>
+											  <td>Lorem ipsum dolor</td>
+											  <td>
+											    <a href="#" class="btn btn-secondary btn-card">
+											    	<i class="fa fa-cloud-download" aria-hidden="true"></i>	
+											    	Download
+												</a>											  	
+											  </td>
+											</tr>
+										
+
+											<tr>
+											  <th scope="row">
+											  	<h6><span class="badge badge-secondary" style="width: 85px; height: 30px; padding-top: 9px;">Expirada</h6>
+											  </th>
+											  <td>00000/2020</td>
+											  <td>Lorem ipsum dolor</td>
+											  <td>
+											    <a href="#" class="btn btn-secondary btn-card">
+											    	<i class="fa fa-search-plus" aria-hidden="true"></i>		
+											    	 Visualizar
+												</a>											  	
+											  </td>
+											</tr>											
+
+										</tbody>
+									  </table>
+									</div>
+								</div>
+							</div>
+
+							<div class="row mt-2 border-top">								
+								<div class="col-lg-12 ">
+									<br/>
+									<nav aria-label="Page navigation example mt-2">
+									  <ul class="pagination">
+									    <li class="page-item">
+									      <a class="page-link" href="#" aria-label="Previous">
+									        <span aria-hidden="true">&laquo;</span>
+									        <span class="sr-only">Previous</span>
+									      </a>
+									    </li>
+									    <li class="page-item"><a class="page-link" href="#">1</a></li>
+									    <li class="page-item"><a class="page-link" href="#">2</a></li>
+									    <li class="page-item"><a class="page-link" href="#">3</a></li>
+									    <li class="page-item">
+									      <a class="page-link" href="#" aria-label="Next">
+									        <span aria-hidden="true">&raquo;</span>
+									        <span class="sr-only">Next</span>
+									      </a>
+									    </li>
+									  </ul>
+									</nav>									
+								</div>
+							</div>
+
+						</div>
+						<!-- ./Conteudo -->
+					</div>
+					<!-- ./row -->
+				</div>
+			</div>
+		</main>
+		<!-- ./conteudo da pagina -->
+  	</div>
+  	<!-- ./container geral da pagina -->
+
+  	<!-- rodape -->
+    <footer class="footer ">
+		<div class="container">
+        	<span>© 2020 MPF - <a href="#">Ministério Publico Federal</a></span>
+      	</div>
+    </footer>	
+    <!-- ./rodape -->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/fontawesome.min.js"></script>
+  </body>
+ </html>

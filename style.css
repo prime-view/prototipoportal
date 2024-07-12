@@ -1,0 +1,218 @@
+.bs-stepper-label {
+	font-size: 11px;
+	font-stretch: normal;
+}
+
+/*
+.bs-stepper-circle {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    line-height: 1em;
+    color: #fff;
+    background-color: #6c757d;
+
+    border-radius: 3em!important;
+    width: 4em!important;
+    height: 4em!important;
+    padding: 1.0em 0!important;
+    margin: .25rem!important;
+}
+*/
+
+
+.active .bs-stepper-circle {
+    background-color: #002d41!important;
+}
+
+
+.logo-img {
+	fill: black!important;
+}
+
+.line{
+	height: 2px;
+	/*background-color: green!important;*/
+}
+
+.borderless td, .borderless th {
+    border: none;
+}
+
+
+table{
+	margin: 10px;
+
+}
+
+html,body {
+  height: 100%;
+  margin: 0;
+}
+
+.card {display:inline-block;}
+
+.full-height {
+  height: 100%;
+  background: #fff;
+}
+
+
+input[type=file]{
+	padding: 6px 12px;
+	display: inline-block;
+    border: 1px solid #ced4da;
+    color: #788088;
+    cursor: pointer;
+}
+
+.form-row{
+	margin:0xp;
+}
+
+body {
+    margin: 0px;
+    padding: 0;
+    /*font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";*/
+    font-family: 'Ropa+Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+    /*background-color: #F2F2F2;*/
+    /*background-color: #D8D8D8;*/
+}
+
+.btn-menu{
+  height:55px;
+  border: 1px solid #e9ecef;
+  color: #e9ecef;
+}
+
+
+.logo {
+  border: 1px solid #002d41;
+}
+
+.content {
+  background-color: #ffffff;
+  box-shadow: 0 0 20px hsla(0, 0%, 0%, 0.60);
+}
+
+.content_login{
+  background-color: #ffffff;
+  box-shadow: 0 0 20px hsla(0, 0%, 0%, 0.60);
+}
+
+.card-portal{
+  /*background-color: #ffffff;
+  box-shadow: 0 0 5px hsla(0, 0%, 0%, 0.15);	*/
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px; /* Set the fixed height of the footer here */
+  line-height: 60px; /* Vertically center the text there */
+  color: #002d41;
+  font-size: 14px;
+}
+
+.footer .container-fluid {
+  background-color: #e9ecef;
+}
+
+.btn-menu-portal {
+  color: #002d41;
+  /*border: 1px solid #BDBDBD;*/
+  background-color: #e9ecef;
+  height: 55px;
+}
+
+h5 {
+  font-family: 'Roboto', sans-serif;
+  color: #002d41;
+}
+
+.altura_maxima {
+  height: 100vh;
+}
+
+.btn-card {
+  width: 160px;
+}
+
+.bg-card-sucesso {
+  border-top: 7px solid #28a745;
+  background-color: #F2FBEF;
+  font-size: 12px;  
+}
+
+.bg-card-aguardando-envio {
+  border-top: 7px solid #6c757d;
+  background-color: #FAFAFA;
+  font-size: 12px;
+}
+
+.bg-card-aguardando-aprovacao {
+  border-top: 7px solid #6c757d;
+  background-color: #FAFAFA;
+  font-size: 12px;
+} 
+
+
+.bg-card-rejeitado {
+  border-top: 7px solid #dc3545;
+  background-color: #FBEFEF;
+  font-size: 12px;
+}
+
+.titulo_filtro{
+  background-color: #002d41;
+  color: #ffffff;
+}
+
+main{
+  background-color: cian;
+}
+
+[data-letters]:before {
+  content:attr(data-letters);
+  display:inline-block;
+  font-size:1em;
+  width:2.3em;
+  height:2.3em;
+  line-height:2.3em;
+  text-align:center;
+  border-radius:50%;
+  background:#002d41;
+  vertical-align:middle;
+  margin-right:0.0em;
+  color:white;
+  cursor: pointer;
+}
+
+
+.estou_aqui {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: .5em 0;
+    margin: .20rem;
+    line-height: 1em;
+}
+
+
+
+
+
+In JS

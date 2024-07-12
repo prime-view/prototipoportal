@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>MPF - Portal Único</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fa/css/font-awesome.min.css">
+ 	<link href="https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap" rel="stylesheet"> 
+ 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet"> 
+ 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bs-stepper/dist/css/bs-stepper.min.css">
+    
+  </head>
+  <body>
+  	<!-- container geral da pagina -->
+  	<div class="container-fluid full-height">
+	    <header>
+	    	<!-- Navbar -->
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<!-- logomarca -->
+				<a class="navbar-brand" href="#">			  				  	
+			  		<img  height="75" src="img/logo.svg">
+			  	</a>
+			  	<!-- ./logomarca -->
+
+			  	<!-- botao collapse -->
+			  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    	<span class="navbar-toggler-icon"></span>
+			  	</button>
+			  	<!-- ./botao collapse -->
+
+
+
+			  	<div class="collapse navbar-collapse ml-4" id="navbarSupportedContent">
+			  		<!-- menu -->
+			    	<ul class="navbar-nav mr-auto">			      
+			      		<li class="nav-item active mr-3 mb-2 mt-2">
+			        		<a class="nav-link btn btn-light" href="index.html">
+			        			<div class="mt-2">
+				        			<i class="fa fa-home fa-lg " aria-hidden="true"></i>
+				        			Página Inicial
+			        			</div>
+			        		</a>
+			      		</li>
+			      
+			      		<li class="nav-item active mr-3 mb-2 mt-2">
+			        		<a class="nav-link btn btn-light" href="solicitacoes.html">
+			        			<div class="mt-2">
+									<i class="fa fa-upload" aria-hidden="true"></i>
+			        				Histórico de Solicitações
+			        			</div>
+			    			</a>
+			      		</li>
+			      		<!--
+			      		<li class="nav-item active mr-3 mb-2 mt-2">
+			        		<a class="nav-link btn btn-light btn-menu-portal" href="downloads.html">
+			        			<div class="mt-2">
+									<i class="fa fa-download" aria-hidden="true"></i>		        	
+			        				Downloads
+			        			</div>
+			       			</a>
+			      		</li>		      
+			      		-->
+			    	</ul>
+			    	<!-- ./menu -->
+
+			    	<!-- usuario logado -->
+					<div class="dropdown ml-auto d-none d-sm-block dropdown-menu-left ">
+				  		<a class="nav-link btn btn-light" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<span data-letters="WN"> Waelson Negreiros</span>				  	
+				  		</a>
+				  		<div class="dropdown-menu content" aria-labelledby="dropdownMenuButton">
+				  	  		<div class="dropdown-item">
+				  	  			<span data-letters="WN"> <i>Waelson Negreiros</i></span>				  	  	
+				  	  		</div>	
+				  	  		<div class="dropdown-divider"></div>
+				      		<a class="dropdown-item" href="meus_dados.html">
+				      			<i class="fa fa-pencil fa-fw"></i>
+				      			Meus Dados
+				      		</a>
+				      		<div class="dropdown-divider"></div>
+				      		<a class="dropdown-item" href="login.html">
+				      			<i class="fa fa-sign-out" aria-hidden="true"></i>
+				      	 		Sair
+				      		</a>
+				  		</div>
+					</div>	
+					<!-- ./usuario logado -->
+			  </div> 		  
+			</nav>
+			<!-- ./navbar -->
+	    </header>
+
+
+	    <!-- conteudo da pagina -->
+		<main class="container-fluid mt-2">
+			<div class="row">
+				<div class="col-12 text-right">
+					<div class="1d-none d-sm-block">
+						<nav aria-label="breadcrumb">
+						  <ol class="breadcrumb">
+						    <li class="breadcrumb-item active" style="color: #002d41" aria-current="page">
+						    	<i class="fa fa-home fa-lg" style="color: #002d41" aria-hidden="true"></i> 
+						    	Página Inicial / Solicitações
+							</li>
+						  </ol>
+						</nav>
+					</div>	
+				</div>
+			</div>
+
+			<div class="row justify-content-center" >
+				<div class="col-12 flex-fill">
+					<!-- row -->
+					<div class="row mb-2 mt-2">
+
+						<!-- Conteudo -->
+						<div class="col-lg-12 bg-white rounded mt-0 mb-1">
+							<div class="row">
+								<div class="col-lg-12">
+									<div class="row border-bottom">
+										<div class="col-lg-12">
+											<h5>
+												<i class="fa fa-file-text-o" aria-hidden="true"></i>
+												 Nova Solicitação
+											</h5>
+										</div>
+									</div>									
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-lg-12">
+
+							      <div class="mb-2 bg-white shadow-sm">
+							        <div id="stepper3" class="bs-stepper">
+							          <div class="bs-stepper-header" role="tablist">
+
+							            <div class="step" data-target="#test-nlf-1">
+							              <button type="button" class="step-trigger" role="tab" id="stepper3trigger1" aria-controls="test-nlf-1">
+							                <span class="bs-stepper-circle">
+							                  <span class="fa fa-user" aria-hidden="true"></span>
+							                </span>
+							                <span class="bs-stepper-label">Solicitante</span>
+							              </button>
+							            </div>
+							            <div class="bs-stepper-line"></div>
+
+							            <div class="step" data-target="#test-nlf-2">
+							              <button type="button" class="step-trigger" role="tab" id="stepper3trigger2" aria-controls="test-nlf-2">
+							                <span class="bs-stepper-circle">
+							                  <span class="fa fa-balance-scale" aria-hidden="true"></span>
+							                </span>
+							                <span class="bs-stepper-label">Instrumento Jurídico</span>
+							              </button>
+							            </div>
+							            <div class="bs-stepper-line"></div>
+
+							            <div class="step" data-target="#test-nlf-3">
+							              <button type="button" class="step-trigger" role="tab" id="stepper3trigger2" aria-controls="test-nlf-3">
+							                <span class="bs-stepper-circle">
+							                  <span class="fa fa-clock-o" aria-hidden="true"></span>
+							                </span>
+							                <span class="bs-stepper-label">Periodicidade</span>
+							              </button>
+							            </div>
+							            <div class="bs-stepper-line"></div>
+
+
+							            <div class="step" data-target="#test-nlf-4">
+							              <button type="button" class="step-trigger" role="tab" id="stepper3trigger2" aria-controls="test-nlf-3">
+							                <span class="bs-stepper-circle">
+							                  <span class="fa fa-bars" aria-hidden="true"></span>
+							                </span>
+							                <span class="bs-stepper-label">Detalhes</span>
+							              </button>
+							            </div>
+							            <div class="bs-stepper-line"></div>
+
+
+							            <div class="step" data-target="#test-nlf-5">
+							              <button type="button" class="step-trigger" role="tab" id="stepper3trigger3" aria-controls="test-nlf-3">
+							                <span class="bs-stepper-circle">
+							                  <span class="fa fa-save" aria-hidden="true"></span>
+							                </span>
+							                <span class="bs-stepper-label">Validar e Enviar Dados</span>
+							              </button>
+							            </div>
+							          </div>
+
+							          <div class="bs-stepper-content">
+							            <form method="get" action="nova-solicitacao-salva.html" onSubmit="return false">
+							              
+
+							              <!-- Solicitante -->
+							              <div id="test-nlf-1" role="tabpanel" class="bs-stepper-pane fade" aria-labelledby="stepper3trigger1">
+										      <div class="form-row">
+											      <div class="form-group col-lg-2">
+											      	<label class="control-label" for="selectTipoSolicitacao">Tipo do Solicitante</label>
+													<select id="selectTipoSolicitacao" class="form-control"  placeholder="Tipo de Solicitante">
+														<option>-</option>
+														<option>Órgão Público</option>
+														<option >Entidade Privada</option>
+													</select>
+											      </div>	
+
+											      <div class="form-group col-lg-2">
+											      	<label class="control-label" for="selectTipoSolicitacao">Esfera</label>
+													<select id="selectTipoSolicitacao" class="form-control"  placeholder="Tipo de Solicitante">
+														<option>-</option>
+														<option>Municipal</option>
+														<option >Estadual</option>
+														<option >Federal</option>
+													</select>
+											      </div>
+										      </div>
+
+										      <div class="form-row">
+											      <div class="form-group col-lg-2">	
+											      	<label for="selectTipoSolicitacao">CNPJ</label>
+											        <input type="text" class="form-control" id="validationCustomUsername" value=""  placeholder="CNPJ" aria-describedby="inputGroupPrepend">      
+											      </div>										      
+
+											      <div class="form-group col-lg-5">	
+											      	<label for="selectTipoSolicitacao">Nome</label>
+											        <input type="text" class="form-control" id="validationCustomUsername" value=""  placeholder="Nome" aria-describedby="inputGroupPrepend">      
+											      </div>	
+											  </div> 	
+
+										      <div class="form-row">
+											      <div class="form-group col-lg-2">	
+											      	<label for="selectTipoSolicitacao">Telefone</label>
+											        <input type="text" class="form-control" id="validationCustomUsername" value=""  placeholder="Telefone" aria-describedby="inputGroupPrepend"	>      
+											      </div>	
+											  </div> 											  
+
+										      <div class="form-row">
+											      <div class="form-group col-lg-2">
+											      	<label for="selectTipoSolicitacao">UF</label>
+													<select id="inputState" class="form-control">
+														<option selected>-</option>
+														<option>Acre</option>
+														<option>Distrito Federal</option>
+														<option>Goiás</option>
+													</select>
+											      </div>
+
+											      <div class="form-group col-lg-5">
+											      	<label for="selectTipoSolicitacao">Cidade</label>
+													<select id="inputState" class="form-control">
+														<option selected>-</option>
+														<option>Acre</option>
+														<option>Distrito Federal</option>
+														<option>Padre Bernardo</option>
+													</select>
+											      </div>
+										  	  </div>	
+							                <button class="btn btn-primary mt-1" style="background-color: #002d41; border-color: #002d41;" onclick="stepper3.next()">Próximo</button>
+							              </div>
+
+
+							              <!-- Instrumento Juridico -->
+							              <div id="test-nlf-2" role="tabpanel" class="bs-stepper-pane fade" aria-labelledby="stepper3trigger2">							                
+										      <div class="form-row">
+											      <div class="form-group col-lg-2">
+											      	<label for="selectTipoSolicitacao">Instrumento Jurídico</label>
+													<select id="inputState" class="form-control">
+														<option value="" selected disabled  >Selecione</option>
+														<option>Convênio</option>
+														<option>Processo</option>
+														<option>Lei</option>
+														<option>Ofício</option>
+														<option>Outros</option>
+													</select>
+											      </div>
+
+											      <div class="form-group col-lg-3">
+											      	<label for="selectTipoSolicitacao">Número</label>
+													<input type="text" class="form-control" id="validationCustomUsername" placeholder="Número do Instrumento Jurídico" aria-describedby="inputGroupPrepend">		
+											      </div>
+										  	  </div>
+								                <button class="btn btn-primary mt-1" style="background-color: #002d41; border-color: #002d41;" onclick="stepper3.previous()">Anterior</button>
+								                <button class="btn btn-primary mt-1" style="background-color: #002d41; border-color: #002d41;" onclick="stepper3.next()">Próximo</button>
+							              </div>
+
+
+							              <!-- Periodicidade -->
+							              <div id="test-nlf-3" role="tabpanel" class="bs-stepper-pane fade" aria-labelledby="stepper3trigger2">
+										  	  <div class="form-row">
+											      <div class="form-group col-lg-2">
+											      	<label for="selectTipoSolicitacao">Periodicidade</label>
+													<select id="inputState" class="form-control">
+														<option selected>-</option>
+														<option>Diário</option>
+														<option>Mensal</option>
+														<option>Carga Única</option>
+														<option>Envio Esporádico</option>
+													</select>
+											      </div>
+										  	  </div>
+
+							                <button class="btn btn-primary mt-1" style="background-color: #002d41; border-color: #002d41;" onclick="stepper3.previous()">Anterior</button>
+							                <button class="btn btn-primary mt-1" style="background-color: #002d41; border-color: #002d41;" onclick="stepper3.next()">Próximo</button>
+							              </div>
+
+
+							              <!-- Datalhe da Solicitacao -->
+							              <div id="test-nlf-4" role="tabpanel" class="bs-stepper-pane fade" aria-labelledby="stepper3trigger2">
+										  	  <div class="form-row">
+											      <div class="form-group col-lg-8">
+													  <div class="form-group">
+													  	<label for="selectTipoSolicitacao">Descrição</label>
+													    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Descrição das informações a serem enviadas" rows="3"></textarea>
+													  </div>
+											  	</div>
+											 </div>	
+
+							                <button class="btn btn-primary mt-1" style="background-color: #002d41; border-color: #002d41;" onclick="stepper3.previous()">Anterior</button>
+							                <button class="btn btn-primary mt-1" style="background-color: #002d41; border-color: #002d41;" onclick="stepper3.next()">Próximo</button>
+							              </div>							              
+						              
+
+
+							              <!-- Validar e Enviar -->
+							              <div id="test-nlf-5" role="tabpanel" class="bs-stepper-pane fade" aria-labelledby="stepper3trigger3">
+
+											<table class="table" >
+												<tbody>
+													<tr>
+														<td class="text-right bg-light font-weight-bold text-nowrap">Tipo do Solicitante</td>
+														<td class="text-left bg-white">Órgão Público</td>
+													</tr>
+													<tr>
+														<td class="text-right bg-light font-weight-bold text-nowrap">Esfera</td>
+														<td class="text-left bg-white">Municipal</td>
+													</tr>																			
+													<tr>
+														<td class="text-right bg-light font-weight-bold text-nowrap">CNPJ / Nome</td>
+														<td class="text-left bg-white">00.000.000/000-0 - Prefeitura Municipal de Padre Bernardo</td>
+													</tr>
+
+													<tr>
+														<td class="text-right bg-light font-weight-bold text-nowrap">Telefone</td>
+														<td class="text-left bg-white">(62) 99999-8888</td>
+													</tr>
+
+													<tr>
+														<td class="text-right bg-light font-weight-bold text-nowrap">UF / Cidade</td>
+														<td class="text-left bg-white">GO - Padre Bernardo</td>
+													</tr>	
+
+
+
+													<tr>
+														<td class="text-right bg-light font-weight-bold text-nowrap">Inst. Jurídico / Número</td>
+														<td class="text-left bg-white">Ofício - 9489/2020</td>
+													</tr>
+													<tr>
+														<td class="text-right bg-light font-weight-bold text-nowrap">Periodicidade</td>
+														<td class="text-left bg-white">Carga Única</td>
+													</tr>
+													<tr>
+														<td class="text-right bg-light font-weight-bold text-nowrap">Descrição</td>
+														<td class="text-left text-wrap bg-white">
+															Etiam faucibus tincidunt erat. Duis eu augue non risus ultrices convallis at et tortor. Nullam gravida blandit eros, ut commodo nisi feugiat at. Aenean mattis odio sed posuere sagittis. 
+														</td>
+													</tr>
+												</tbody>
+											</table>											
+
+
+							                <button class="btn btn-primary mt-1" style="background-color: #002d41; border-color: #002d41;" onclick="stepper3.previous()">Anterior</button>
+							                <a href="nova-solicitacao-salva.html" class="btn btn-primary mt-1" style="background-color: #002d41; border-color: #002d41;">Confirmar</a>              	
+							              </div>
+
+							            </form>
+							          </div>
+							        </div>
+							      </div>
+
+								</div>
+							</div>
+
+						</div>
+						<!-- ./Conteudo -->
+					</div>
+					<!-- ./row -->
+				</div>
+			</div>
+		</main>
+		<!-- ./conteudo da pagina -->
+  	</div>
+  	<!-- ./container geral da pagina -->
+
+  	<!-- rodape -->
+    <footer class="footer ">
+		<div class="container-fluid">
+        	<span>© 2020 MPF - Ministério Publico Federal</span>
+      	</div>
+    </footer>	
+    <!-- ./rodape -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/fontawesome.min.js"></script>
+ 	<script src="https://cdn.jsdelivr.net/npm/bs-stepper/dist/js/bs-stepper.min.js"></script>
+ 	<script src="js/main.js"></script>
+  </body>
+ </html>

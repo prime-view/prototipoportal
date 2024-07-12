@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>MPF - Portal Único</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fa/css/font-awesome.min.css">
+ 	<link href="https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap" rel="stylesheet"> 
+ 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet"> 
+
+    
+  </head>
+  <body>
+  	<!-- container geral da pagina -->
+  	<div class="container-fluid full-height">
+	    <header>
+	    	<!-- Navbar -->
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<!-- logomarca -->
+				<a class="navbar-brand" href="#">			  				  	
+			  		<img  height="75" src="img/logo.svg">
+			  	</a>
+			  	<!-- ./logomarca -->
+
+			  	<!-- botao collapse -->
+			  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    	<span class="navbar-toggler-icon"></span>
+			  	</button>
+			  	<!-- ./botao collapse -->
+
+
+
+			  	<div class="collapse navbar-collapse ml-4" id="navbarSupportedContent">
+			  		<!-- menu -->
+			    	<ul class="navbar-nav mr-auto">			      
+			      		<li class="nav-item active mr-3 mb-2 mt-2">
+			        		<a class="nav-link btn btn-light" href="index.html">
+			        			<div class="mt-2">
+				        			<i class="fa fa-home fa-lg " aria-hidden="true"></i>
+				        			Página Inicial
+			        			</div>
+			        		</a>
+			      		</li>
+			      
+			      		<li class="nav-item active mr-3 mb-2 mt-2">
+			        		<a class="nav-link btn btn-light" href="solicitacoes.html">
+			        			<div class="mt-2">
+									<i class="fa fa-upload" aria-hidden="true"></i>
+			        				Histórico de Solicitações
+			        			</div>
+			    			</a>
+			      		</li>
+			      		<!--	
+			      		<li class="nav-item active mr-3 mb-2 mt-2">
+			        		<a class="nav-link btn btn-light btn-menu-portal" href="downloads.html">
+			        			<div class="mt-2">
+									<i class="fa fa-download" aria-hidden="true"></i>		        	
+			        				Downloads
+			        			</div>
+			       			</a>
+			      		</li>
+			      		-->		      
+			    	</ul>
+			    	<!-- ./menu -->
+
+			    	<!-- usuario logado -->
+					<div class="dropdown ml-auto d-none d-sm-block dropdown-menu-left ">
+				  		<a class="nav-link btn btn-light" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<span data-letters="WN"> Waelson Negreiros</span>				  	
+				  		</a>
+				  		<div class="dropdown-menu content" aria-labelledby="dropdownMenuButton">
+				  	  		<div class="dropdown-item">
+				  	  			<span data-letters="WN"> <i>Waelson Negreiros</i></span>				  	  	
+				  	  		</div>	
+				  	  		<div class="dropdown-divider"></div>
+				      		<a class="dropdown-item" href="#">
+				      			<i class="fa fa-pencil fa-fw"></i>
+				      			Meus Dados
+				      		</a>
+				      		<div class="dropdown-divider"></div>
+				      		<a class="dropdown-item" href="login.html">
+				      			<i class="fa fa-sign-out" aria-hidden="true"></i>
+				      	 		Sair
+				      		</a>
+				  		</div>
+					</div>	
+					<!-- ./usuario logado -->
+			  </div> 		  
+			</nav>
+			<!-- ./navbar -->
+	    </header>
+
+
+	    <!-- conteudo da pagina -->
+		<main class="container-fluid mt-2">
+			<div class="row">
+				<div class="col-12 text-right">
+					<div class="1d-none d-sm-block">
+						<nav aria-label="breadcrumb">
+						  <ol class="breadcrumb">
+						    <li class="breadcrumb-item active" style="color: #002d41" aria-current="page">
+						    	<i class="fa fa-home fa-lg" style="color: #002d41" aria-hidden="true"></i> 
+						    	Página Inicial / Alterar Senha
+							</li>
+						  </ol>
+						</nav>
+					</div>	
+				</div>
+			</div>
+
+			<div class="row justify-content-center" >
+				<div class="col-12 flex-fill">
+					<!-- row -->
+					<div class="row mb-5 mt-2">
+
+						<!-- Menu -->
+						<div class="col-lg-2">
+						    <div class="list-group" id="list-tab" role="tablist">
+						    	<div class="list-group-item titulo_filtro">
+						    		<i class="fa fa-user" aria-hidden="true"></i>
+						    		 Meus Dados
+						    	</div>	
+								<a class="list-group-item btn-light" href="meus_dados.html">
+									<i class="fa fa-check-square-o" aria-hidden="true"></i>
+									 Dados Cadastrais
+								</a>		
+						      	<a class="list-group-item btn-light" href="alterar_senha.html">
+						      		<i class="fa fa-key" aria-hidden="true"></i>
+						      		 Alterar Senha
+						      	</a>
+
+						    </div>					
+						</div>
+						<!-- ./Menu -->
+
+						<!-- Conteudo -->
+						<div class="col-lg-10" style="padding-bottom: 20px;">
+
+
+							<div class="row mt-3 border-bottom">
+								<div class="col-lg-12">
+									<div class="row">
+										<div class="col-lg-12 mt-2 mb-2">
+											<h5>
+												<i class="fa fa-key" aria-hidden="true"></i>
+												 Alterar Senha
+											</h5>
+										</div>									
+									</div>									
+								</div>
+							</div>
+
+
+
+							<div class="row mt-3 mb-3">
+								<div class="col-lg-12">
+									<form>		
+										<div class="form-row">			  
+									      <div class="input-group mb-4 col-lg-3">
+									        <input type="password" class="form-control" id="validationCustomUsername" placeholder="Senha Atual" aria-describedby="inputGroupPrepend" required>
+									        <div class="input-group-append" >
+									          <span class="input-group-text" id="inputGroupPrepend">
+									          	<span class="fa fa-lock"></span>
+									          </span>
+									        </div>        
+									      </div>
+								      	</div>
+
+								      	<div class="form-row">
+									      <div class="input-group mb-4 col-lg-3">
+									        <input type="password" class="form-control" id="validationCustomUsername" placeholder="Nova Senha" aria-describedby="inputGroupPrepend" required>
+									        <div class="input-group-append" >
+									          <span class="input-group-text" id="inputGroupPrepend">
+									          	<span class="fa fa-lock"></span>
+									          </span>
+									        </div>        
+									      </div>
+								      	</div>
+
+								      	<div class="form-row">
+									      <div class="input-group mb-4 col-lg-3">
+									        <input type="password" class="form-control" id="validationCustomUsername" placeholder="Confirmar Nova Senha" aria-describedby="inputGroupPrepend" required>
+									        <div class="input-group-append" >
+									          <span class="input-group-text" id="inputGroupPrepend">
+									          	<span class="fa fa-lock"></span>
+									          </span>
+									        </div>        
+									      </div>
+								  		</div>
+
+									  <button type="submit" class="btn btn-secondary" style="background-color: #002d41; border-color: #002d41;">Alterar</button>
+									</form>
+								</div>
+							</div>
+
+
+						</div>
+						<!-- ./Conteudo -->
+					</div>
+					<!-- ./row -->
+				</div>
+			</div>
+		</main>
+		<!-- ./conteudo da pagina -->
+  	</div>
+  	<!-- ./container geral da pagina -->
+
+  	<!-- rodape -->
+    <footer class="footer ">
+		<div class="container-fluid">
+        	<span>© 2020 MPF - Ministério Publico Federal</span>
+      	</div>
+    </footer>	
+    <!-- ./rodape -->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/fontawesome.min.js"></script>
+  </body>
+ </html>

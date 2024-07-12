@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>MPF - Portal Único</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fa/css/font-awesome.min.css">
+ 	<link href="https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap" rel="stylesheet"> 
+ 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet"> 
+ 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bs-stepper/dist/css/bs-stepper.min.css">
+
+    
+  </head>
+  <body>
+  	<!-- container geral da pagina -->
+  	<div class="container-fluid full-height" >
+	    <header>
+	    	<!-- Navbar -->
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<!-- logomarca -->
+				<a class="navbar-brand" href="#">			  				  	
+			  		<img  height="75" src="img/logo.svg">
+			  	</a>
+			  	<!-- ./logomarca -->
+
+			  	<!-- botao collapse -->
+			  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    	<span class="navbar-toggler-icon"></span>
+			  	</button>
+			  	<!-- ./botao collapse -->
+
+
+
+			  	<div class="collapse navbar-collapse ml-4" id="navbarSupportedContent">
+			  		<!-- menu -->
+			    	<ul class="navbar-nav mr-auto">			      
+			      		<li class="nav-item active mr-3 mb-2 mt-2">
+			        		<a class="nav-link btn btn-light" href="index.html">
+			        			<div class="mt-2">
+				        			<i class="fa fa-home fa-lg " aria-hidden="true"></i>
+				        			Página Inicial
+			        			</div>
+			        		</a>
+			      		</li>
+			      
+			      		<li class="nav-item active mr-3 mb-2 mt-2">
+			        		<a class="nav-link btn btn-light" href="solicitacoes.html">
+			        			<div class="mt-2">
+									<i class="fa fa-upload" aria-hidden="true"></i>
+			        				Histórico de Solicitações
+			        			</div>
+			    			</a>
+			      		</li>
+			      		<!--
+			      		<li class="nav-item active mr-3 mb-2 mt-2">
+			        		<a class="nav-link btn btn-light btn-menu-portal" href="downloads.html">
+			        			<div class="mt-2">
+									<i class="fa fa-download" aria-hidden="true"></i>		        	
+			        				Downloads
+			        			</div>
+			       			</a>
+			      		</li>
+			      		-->		      
+			    	</ul>
+			    	<!-- ./menu -->
+
+			    	<!-- usuario logado -->
+					<div class="dropdown ml-auto d-none d-sm-block dropdown-menu-left ">
+				  		<a class="nav-link btn btn-light" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<span data-letters="WN"> Waelson Negreiros</span>				  	
+				  		</a>
+				  		<div class="dropdown-menu content" aria-labelledby="dropdownMenuButton">
+				  	  		<div class="dropdown-item">
+				  	  			<span data-letters="WN"> <i>Waelson Negreiros</i></span>				  	  	
+				  	  		</div>	
+				  	  		<div class="dropdown-divider"></div>
+				      		<a class="dropdown-item" href="meus_dados.html">
+				      			<i class="fa fa-pencil fa-fw"></i>
+				      			Meus Dados
+				      		</a>
+				      		<div class="dropdown-divider"></div>
+				      		<a class="dropdown-item" href="login.html">
+				      			<i class="fa fa-sign-out" aria-hidden="true"></i>
+				      	 		Sair
+				      		</a>
+				  		</div>
+					</div>	
+					<!-- ./usuario logado -->
+			  </div> 		  
+			</nav>
+			<!-- ./navbar -->
+	    </header>
+
+
+	    <!-- conteudo da pagina -->
+		<main class="container-fluid mt-2" >
+			<div class="row">
+				<div class="col-12 text-right">
+					<div class="1d-none d-sm-block">
+						<nav aria-label="breadcrumb">
+						  <ol class="breadcrumb">
+						    <li class="breadcrumb-item active" style="color: #002d41" aria-current="page">
+						    	<i class="fa fa-home fa-lg" style="color: #002d41" aria-hidden="true"></i> 
+						    	Página Inicial / Solicitações
+							</li>
+						  </ol>
+						</nav>
+					</div>	
+				</div>
+			</div>
+
+			<div class="row justify-content-center" >
+				<div class="col-12 flex-fill">
+					<!-- row -->
+					<div class="row mb-5 mt-2">
+
+						<!-- Menu -->
+						<div class="col-lg-2">
+						    <div class="list-group" id="list-tab" role="tablist">
+						    	<div class="list-group-item titulo_filtro">
+						    		<i class="fa fa-filter" aria-hidden="true"></i>
+						    		 Filtrar por Situação
+						    	</div>	
+								<a class="list-group-item btn-light" href="#list-home">
+									<div style="margin-left: -10px;">
+									 	Todas <span class="badge badge-secondary" style="background-color: #002d41; border-color: #002d41;">5</span>
+									</div>
+								</a>		
+						      	<a class="list-group-item btn-light" href="#list-settings">
+						      		<div style="margin-left: -10px;">
+						      		 	Aprovadas <span class="badge badge-secondary" style="background-color: #002d41; border-color: #002d41;">1</span>
+						      		</div>
+						      	</a>
+						      	<a class="list-group-item btn-light" href="#list-settings">
+						      		<div style="margin-left: -10px;">
+						      		 	Expiradas <span class="badge badge-secondary" style="background-color: #002d41; border-color: #002d41;">1</span>
+						      		</div>
+						      	</a>						      	
+						      	<a class="list-group-item btn-light" href="#list-home">
+						      		<div style="margin-left: -10px;">
+						      	 		Aguardando Aprovação <span class="badge badge-secondary" style="background-color: #002d41; border-color: #002d41;">1</span>
+						      	 	</div>
+						      	</a>
+								<a class="list-group-item btn-light" href="#list-profile">
+									<div style="margin-left: -10px;">
+						      	 		Aguardando Envio <span class="badge badge-secondary" style="background-color: #002d41; border-color: #002d41;">1</span>
+						      	 	</div>
+						      	</a>
+						      	<a class="list-group-item btn-light" href="#list-messages">
+						      		<div style="margin-left: -10px;">
+						      		 	Rejeitadas <span class="badge badge-secondary" style="background-color: #002d41; border-color: #002d41;">1</span>
+						      		</div>
+						      	</a>
+
+						    </div>					
+						</div>
+						<!-- ./Menu -->
+
+						<!-- Conteudo -->
+						<div class="col-lg-10 rounded mb-3" style="padding-bottom: 20px;">
+							<div class="row mt-3">
+								<div class="col-lg-12">
+									<div class="row">
+										<div class="col-lg-6 mt-2">
+											<h5>
+												<i class="fa fa-filter" aria-hidden="true"></i>
+												 Filtrando por 'Todas'
+											</h5>
+										</div>
+										<div class="col-lg-6 text-right">
+											<a class="btn btn-dark mb-3" href="nova-solicitacao.html" style="background-color: #002d41; border-color: #002d41;">
+												<i class="fa fa-plus-circle" aria-hidden="true"></i>	
+												Nova Solicitação
+											</a>
+										</div>										
+									</div>									
+								</div>
+							</div>
+							
+							<div class="row mt-2">
+								<div class="col-lg-12">
+									<div class="table-responsive">
+									  <table class="table">
+										<thead>
+											<tr>
+											  <th scope="col">Protocolo</th>		
+											  <th scope="col">Inst. Jurídico</th>
+											  <th scope="col">Solicitante</th>
+											  <th scope="col">Data Solicitação</th>
+											  <th scope="col">Situação</th>
+											  <th scope="col">Ação</th>
+											</tr>
+										</thead>
+										<tbody>
+											<!-- Aprovada -->
+											<tr>
+											  <td scope="row">
+											  	9489348-3
+											  </td>
+											  <td>OFÍCIO-00939/2020</td>
+											  <td>Prefeitura Municipal de Pe. Bernardo</td>
+											  <td>01/01/2020</td>
+											  <td scope="row">
+											  	<h6>
+											  		<span class="badge badge-success">Aprovada</span>
+											  	</h6>
+											  </td>											  
+											  <td>
+												<div class="dropdown">
+												  <a class="btn btn-secondary dropdown-toggle" style="background-color: #002d41; border-color: #002d41;" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												    Opções
+												  </a>
+
+												  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+												    <a class="dropdown-item" href="ver-solicitacao.html">
+												    	<i class="fa fa-search-plus" aria-hidden="true"></i>
+												    	 Visualizar
+												    </a>
+												    <div class="dropdown-divider"></div>
+												    <a class="dropdown-item" href="#">
+												    	<i class="fa fa-print" aria-hidden="true"></i>
+												    	 Recibo
+												    </a>
+												  </div>
+												</div>											  	
+											  </td>
+											</tr>
+											<!-- ./Aprovada -->
+
+
+											<!-- Rejeitada -->
+											<tr>
+											  <td scope="row">
+											  	9489348-3
+											  </td>
+											  <td>OFÍCIO-00939/2020</td>
+											  <td>Prefeitura Municipal de Pe. Bernardo</td>
+											  <td>01/01/2020</td>
+											  <td scope="row">
+											  	<h6>
+											  		<span class="badge badge-danger">Rejeitada</span>
+											  	</h6>
+											  </td>											  
+											  <td>
+												<div class="dropdown">
+												  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" style="background-color: #002d41; border-color: #002d41;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												    Opções
+												  </a>
+
+												  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+												    <a class="dropdown-item" href="ver-solicitacao.html">
+												    	<i class="fa fa-search-plus" aria-hidden="true"></i>
+												    	 Visualizar
+												    </a>
+												    <div class="dropdown-divider"></div>
+												    <a class="dropdown-item" href="#" data-toggle="modal" data-target=".bd-mais-detalhes">
+												    	<i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+												    	 Mais Detalhes
+												    </a>
+												  </div>
+												</div>											  	
+											  </td>
+											</tr>
+											<!-- ./Rejeitada -->
+
+
+											<!-- Aguardando Aprovacao -->
+											<tr>
+											  <td scope="row">
+											  	9489348-3
+											  </td>
+											  <td>OFÍCIO-00939/2020</td>
+											  <td>Prefeitura Municipal de Pe. Bernardo</td>
+											  <td>01/01/2020</td>
+											  <td scope="row">
+											  	<h6>
+											  		<span class="badge badge-primary">Aguardando Aprovação</span>
+											  	</h6>
+											  </td>											  
+											  <td>
+												<div class="dropdown">
+												  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" style="background-color: #002d41; border-color: #002d41;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												    Opções
+												  </a>
+
+												  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+												    <a class="dropdown-item" href="ver-solicitacao.html">
+												    	<i class="fa fa-search-plus" aria-hidden="true"></i>
+												    	 Visualizar
+												    </a>
+												    <div class="dropdown-divider"></div>
+												    <a class="dropdown-item" href="#">
+												    	<i class="fa fa-trash-o" aria-hidden="true"></i>
+												    	 Cancelar
+												    </a>
+												  </div>
+												</div>											  	
+											  </td>
+											</tr>
+											<!-- ./Aguardando Aprovacao -->
+
+
+											<!-- Aguardando Arquivo -->
+											<tr>
+											  <td scope="row">
+											  	9489348-3
+											  </td>
+											  <td>OFÍCIO-00939/2020</td>
+											  <td>Prefeitura Municipal de Pe. Bernardo</td>
+											  <td>01/01/2020</td>
+											  <td scope="row">
+											  	<h6>
+											  		<span class="badge badge-warning">Aguardando Arquivo</span>
+											  	</h6>
+											  </td>											  
+											  <td>
+												<div class="dropdown">
+												  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" style="background-color: #002d41; border-color: #002d41;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												    Opções
+												  </a>
+
+												  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+												    <a class="dropdown-item" href="ver-solicitacao.html">
+												    	<i class="fa fa-search-plus" aria-hidden="true"></i>
+												    	 Visualizar
+												    </a>
+												    <div class="dropdown-divider"></div>
+												    <a class="dropdown-item" href="enviar-arquivos.html">
+												    	<i class="fa fa-cloud-upload" aria-hidden="true"></i>
+												    	 Enviar Arquivo
+												    </a>
+												  </div>
+												</div>											  	
+											  </td>
+											</tr>
+											<!-- ./Aguardando Arquivo -->		
+
+
+											<!-- Expirada -->
+											<tr>
+											  <td scope="row">
+											  	9489348-3
+											  </td>
+											  <td>OFÍCIO-00939/2020</td>
+											  <td>Prefeitura Municipal de Pe. Bernardo</td>
+											  <td>01/01/2020</td>
+											  <td scope="row">
+											  	<h6>
+											  		<span class="badge badge-secondary">Expirada</span>
+											  	</h6>
+											  </td>											  
+											  <td>
+												<div class="dropdown">
+												  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" style="background-color: #002d41; border-color: #002d41;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												    Opções
+												  </a>
+
+												  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+												    <a class="dropdown-item" href="ver-solicitacao.html">
+												    	<i class="fa fa-search-plus" aria-hidden="true"></i>
+												    	 Visualizar
+												    </a>
+												  </div>
+												</div>											  	
+											  </td>
+											</tr>
+											<!-- ./Expirada -->		
+
+										
+
+										</tbody>
+									  </table>
+									</div>
+								</div>
+							</div>
+
+							<div class="row mt-2 border-top">								
+								<div class="col-lg-12 ">
+									<br/>
+									<nav aria-label="Page navigation example mt-2">
+									  <ul class="pagination">
+									    <li class="page-item">
+									      <a class="page-link" href="#" aria-label="Previous">
+									        <span aria-hidden="true">&laquo;</span>
+									        <span class="sr-only">Previous</span>
+									      </a>
+									    </li>
+									    <li class="page-item"><a class="page-link" href="#">1</a></li>
+									    <li class="page-item"><a class="page-link" href="#">2</a></li>
+									    <li class="page-item"><a class="page-link" href="#">3</a></li>
+									    <li class="page-item">
+									      <a class="page-link" href="#" aria-label="Next">
+									        <span aria-hidden="true">&raquo;</span>
+									        <span class="sr-only">Next</span>
+									      </a>
+									    </li>
+									  </ul>
+									</nav>									
+								</div>
+							</div>
+
+						</div>
+						<!-- ./Conteudo -->
+					</div>
+					<!-- ./row -->
+				</div>
+			</div>
+		</main>
+		<!-- ./conteudo da pagina -->
+
+
+
+		<!-- Modal erros -->		
+		<div class="modal fade bd-mais-detalhes"  tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+		  <div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<form>
+					<div class="modal-header">
+						
+						<h5 class="modal-title"> 
+							<i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+							Mais Detalhes
+						</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="alert alert-danger" role="alert">
+								  <h6 class="alert-heading text-danger">Atenção!</h6>
+								  <p class=" text-danger">Durante a análise dos seus arquivos foram encontradas algumas inconsistências. Por favor, verifique os detalhes abaixo.</p>
+
+								</div>								
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-lg-12">
+								<table class="table">
+									<thead>
+										<tr>
+											<th>Origem</th>
+											<th>Crítica</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="text-nowrap bg-light">Arquivo de Dados</td>
+											<td>A quantidade de colunas do Arquivo de Dados, não confere com a quantidade de colunas  especificadas no Arquivo de Dicionário de Dados.</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>						
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">
+							<i class="fa fa-window-close-o" aria-hidden="true"></i>
+							Fechar
+						</button>
+					  <a href="enviar-arquivos.html" class="btn btn-secondary">
+					  	Reenviar Arquivos
+					  </a>						
+					</div>
+		      	<form>
+		    </div>
+		  </div>
+		</div>
+
+		<!-- ./Modal erros -->
+
+
+		<!-- Modal Upload Arquivos -->
+		<div class="modal fade bd-example-modal-sm"  tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+		  <div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<form>
+					<div class="modal-header">
+						
+						<h5 class="modal-title"> 
+							<i class="fa fa-cloud-upload" aria-hidden="true"></i>	
+							Enviar Arquivos
+						</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="form-row">
+							<div class="form-group col-lg-12">
+								<label for="exampleFormControlFile1"><strong>Dicionário de Dados</strong> </label>
+								<a href="#" class="ml-3 font-italic" style="color: #000; font-size: 12px;" data-toggle="popover" title="O que é um dicionário de dados?" data-content="Maecenas convallis, nibh eget sollicitudin ultricies, lectus nisi scelerisque justo, sit amet facilisis felis est id odio.">
+									[O que é isso?]
+								</a>
+								<input type="file" class="form-control" id="exampleFormControlFile1">
+							</div>		
+
+							<div class="form-group col-lg-12">
+								<label for="exampleFormControlFile1"><strong>Arquivo de Dados</strong></label>
+								<a href="#" class="ml-3 font-italic" style="color: #000; font-size: 12px;" data-toggle="popover" title="O que é um arquivo de dados?" data-content="Maecenas convallis, nibh eget sollicitudin ultricies, lectus nisi scelerisque justo, sit amet facilisis felis est id odio.">
+									[O que é isso?]
+								</a>									
+								<input type="file" class="form-control" id="exampleFormControlFile1">
+							</div>	
+
+							<div class="form-group col-lg-12">
+								<label for="exampleFormControlFile1"><strong>Hash</strong></label>
+								<a href="#" class="ml-3 font-italic" style="color: #000; font-size: 12px;" data-toggle="popover" title="O que é um hash?" data-content="Maecenas convallis, nibh eget sollicitudin ultricies, lectus nisi scelerisque justo, sit amet facilisis felis est id odio.">
+									[O que é isso?]
+								</a>									
+								<input type="text" class="form-control" id="validationCustomUsername" placeholder="Hash" aria-describedby="inputGroupPrepend" required>
+							</div>									
+
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">
+							<i class="fa fa-window-close-o" aria-hidden="true"></i>
+							Fechar
+						</button>
+						<button type="button" class="btn btn-primary" style="background-color: #002d41;">
+							<i class="fa fa-check" aria-hidden="true"></i>
+							Confirmar
+						</button>
+					</div>
+		      	<form>
+		    </div>
+		  </div>
+		</div>			
+		<!-- ./ Modal Upload Arquivos -->
+
+
+
+
+
+  	</div>
+  	<!-- ./container geral da pagina -->
+
+  	<!-- rodape -->
+    <footer class="footer ">
+		<div class="container-fluid">
+        	<span>© 2020 MPF - Ministério Publico Federal</span>
+      	</div>
+    </footer>	
+    <!-- ./rodape -->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/fontawesome.min.js"></script>
+ 	<script src="https://cdn.jsdelivr.net/npm/bs-stepper/dist/js/bs-stepper.min.js"></script>
+  </body>
+ </html>

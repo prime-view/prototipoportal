@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>MPF - Portal Único</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fa/css/font-awesome.min.css">
+ 	<link href="https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap" rel="stylesheet"> 
+ 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet"> 
+ 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bs-stepper/dist/css/bs-stepper.min.css">
+    
+  </head>
+  <body>
+  	<!-- container geral da pagina -->
+  	<div class="container-fluid full-height">
+	    <header>
+	    	<!-- Navbar -->
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<!-- logomarca -->
+				<a class="navbar-brand" href="#">			  				  	
+			  		<img  height="75" src="img/logo.svg">
+			  	</a>
+			  	<!-- ./logomarca -->
+
+			  	<!-- botao collapse -->
+			  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    	<span class="navbar-toggler-icon"></span>
+			  	</button>
+			  	<!-- ./botao collapse -->
+
+
+
+			  	<div class="collapse navbar-collapse ml-4" id="navbarSupportedContent">
+			  		<!-- menu -->
+			    	<ul class="navbar-nav mr-auto">			      
+			      		<li class="nav-item active mr-3 mb-2 mt-2">
+			        		<a class="nav-link btn btn-light" href="index.html">
+			        			<div class="mt-2">
+				        			<i class="fa fa-home fa-lg " aria-hidden="true"></i>
+				        			Página Inicial
+			        			</div>
+			        		</a>
+			      		</li>
+			      
+			      		<li class="nav-item active mr-3 mb-2 mt-2">
+			        		<a class="nav-link btn btn-light" href="solicitacoes.html">
+			        			<div class="mt-2">
+									<i class="fa fa-upload" aria-hidden="true"></i>
+			        				Histórico de Solicitações
+			        			</div>
+			    			</a>
+			      		</li>
+			    	</ul>
+			    	<!-- ./menu -->
+
+			    	<!-- usuario logado -->
+					<div class="dropdown ml-auto d-none d-sm-block dropdown-menu-left ">
+				  		<a class="nav-link btn btn-light" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<span data-letters="WN"> Waelson Negreiros</span>				  	
+				  		</a>
+				  		<div class="dropdown-menu content" aria-labelledby="dropdownMenuButton">
+				  	  		<div class="dropdown-item">
+				  	  			<span data-letters="WN"> <i>Waelson Negreiros</i></span>				  	  	
+				  	  		</div>	
+				  	  		<div class="dropdown-divider"></div>
+				      		<a class="dropdown-item" href="meus_dados.html">
+				      			<i class="fa fa-pencil fa-fw"></i>
+				      			Meus Dados
+				      		</a>
+				      		<div class="dropdown-divider"></div>
+				      		<a class="dropdown-item" href="login.html">
+				      			<i class="fa fa-sign-out" aria-hidden="true"></i>
+				      	 		Sair
+				      		</a>
+				  		</div>
+					</div>	
+					<!-- ./usuario logado -->
+			  </div> 		  
+			</nav>
+			<!-- ./navbar -->
+	    </header>
+
+
+	    <!-- conteudo da pagina -->
+		<main class="container-fluid mt-2">
+			<div class="row">
+				<div class="col-12 text-right">
+					<div class="1d-none d-sm-block">
+						<nav aria-label="breadcrumb">
+						  <ol class="breadcrumb">
+						    <li class="breadcrumb-item active" style="color: #002d41" aria-current="page">
+						    	<i class="fa fa-home fa-lg" style="color: #002d41" aria-hidden="true"></i> 
+						    	Página Inicial / Visualizar Solicitação
+							</li>
+						  </ol>
+						</nav>
+					</div>	
+				</div>
+			</div>
+
+			<div class="row justify-content-center" >
+				<div class="col-12 flex-fill">
+					<!-- row -->
+					<div class="row">
+
+
+						<!-- Conteudo -->
+						<div class="col-lg-12 rounded mb-5">
+							<div class="row">
+								<div class="col-lg-12">
+									<div class="row border-bottom">
+										<div class="col-lg-8 mb-2">
+											<h5>
+												<i class="fa fa-file-text-o" aria-hidden="true"></i>
+												 Visualizar Solicitação / Nº 0998398-2
+											</h5>
+										</div>
+										<div class="col-lg-4 text-right mb-2">
+											<a href="javascript:window.history.back()" class="btn btn-secondary" style="background-color: #002d41; border-color: #002d41;">
+												<i class="fa fa-chevron-left" aria-hidden="true"></i>
+												 Voltar
+											</a>
+										</div>										
+									</div>									
+								</div>
+							</div>
+
+
+							<div class="row mt-2">
+								<div class="col-lg-12">
+								
+									<div class="bs-stepper">
+										<div class="bs-stepper-header" role="tablist">
+											<!-- your steps here -->
+											<div class="step" data-target="#logins-part">
+												<button type="button" class="step-trigger active" role="tab" aria-controls="logins-part" id="logins-part-trigger">
+													<span class="bs-stepper-circle">1</span>
+													<span class="bs-stepper-label">Início</span>
+												</button>
+											</div>
+											<div class="line"></div>
+
+											<div class="step" data-target="#information-part">
+												<button type="button" class="step-trigger" role="tab" aria-controls="information-part" id="information-part-trigger">
+													<img src="img/estou_aqui.gif">
+													<span class="bs-stepper-label">Aguardando Aprovação</span>
+												</button>
+											</div>
+											<div class="line"></div>
+
+											<div class="step" data-target="#information-part">
+												<button type="button" class="step-trigger" role="tab" aria-controls="information-part" id="information-part-trigger">
+													<span class="bs-stepper-circle">2</span>
+													<span class="bs-stepper-label">Enviar Arquivo</span>
+												</button>
+											</div>
+											<div class="line"></div>
+
+											<div class="step" data-target="#information-part">
+												<button type="button" class="step-trigger" role="tab" aria-controls="information-part" id="information-part-trigger">
+													<span class="bs-stepper-circle">2</span>
+													<span class="bs-stepper-label">Validar Arquivo</span>
+												</button>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+
+							<div class="row mb-3">
+								<div class="col-lg-12 border rounded" style="padding: 0px;">
+									<table class="table borderless">
+										<tbody>
+											<tr>
+												<td class="text-right">
+													<i class="fa fa-dot-circle-o" aria-hidden="true"></i>
+													<strong> Protocolo:</strong>
+												</td>
+												<td class="text-left">0998398-2</td>
+
+												<td class="text-right">
+													<i class="fa fa-random" aria-hidden="true"></i>
+													<strong> Status:</strong>
+												</td>
+												<td class="text-left">
+													<h5><span class="badge badge-secondary">Aguardando Aprovação</span></h5>
+												</td>
+
+												<td class="text-right">
+													<i class="fa fa-calendar" aria-hidden="true"></i>
+													<strong> Data Solicitação:</strong>
+												</td>
+												<td class="text-left">12/01/2020 13:30</td>
+
+												<td class="text-right">
+													<i class="fa fa-user-circle-o" aria-hidden="true"></i>
+													<strong> Solicitante:</strong>
+												</td>
+												<td class="text-left">Waelson Negreiros Nunes</td>									
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+
+
+							<div class="row">
+								<div class="col-lg-12" style="padding: 0px;">
+
+									<ul class="nav nav-tabs" id="myTab" role="tablist">
+										<li class="nav-item" role="presentation">
+											<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Solicitação</a>
+										</li>
+
+										<li class="nav-item" role="presentation">
+											<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Arquivos</a>
+										</li>
+									</ul>
+
+									<div class="tab-content" id="myTabContent">
+										<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+											<!-- Tab Solicitacao -->											
+											<table class="table borderless" >
+												<tbody>
+													<tr>
+														<td class="text-right bg-light font-weight-bold text-nowrap">Tipo do Solicitante</td>
+														<td class="text-left">Órgão Público</td>
+													</tr>
+													<tr>
+														<td class="text-right bg-light font-weight-bold text-nowrap">Esfera</td>
+														<td class="text-left">Municipal</td>
+													</tr>											
+													<tr>
+														<td class="text-right bg-light font-weight-bold text-nowrap">CNPJ / Nome</td>
+														<td class="text-left">00.000.000/000-0 - Prefeitura Municipal de Padre Bernardo</td>
+													</tr>
+													<tr>
+														<td class="text-right bg-light font-weight-bold text-nowrap">UF / Cidade</td>
+														<td class="text-left">GO - Padre Bernardo</td>
+													</tr>											
+
+													<tr>
+														<td class="text-right bg-light font-weight-bold text-nowrap">Inst. Jurídico / Número</td>
+														<td class="text-left">Ofício - 9489/2020</td>
+													</tr>
+													<tr>
+														<td class="text-right bg-light font-weight-bold text-nowrap">Periodicidade</td>
+														<td class="text-left">Carga Única</td>
+													</tr>
+													<tr>
+														<td class="text-right bg-light font-weight-bold text-nowrap">Descrição</td>
+														<td class="text-left text-wrap">
+															Etiam faucibus tincidunt erat. Duis eu augue non risus ultrices convallis at et tortor. Nullam gravida blandit eros, ut commodo nisi feugiat at. Aenean mattis odio sed posuere sagittis. 
+														</td>
+													</tr>
+												</tbody>
+											</table>											
+											<!-- ./Tab Solicitacao -->
+										</div>
+
+										<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab" style="height: 100%; min-height: 378px;">
+											<div class="alert alert-warning mt-2" role="alert">
+												<i class="fa fa-exclamation-circle"></i>
+												 Você ainda não enviou nenhum arquivo.
+											</div>
+										</div>
+									</div>
+
+
+								</div>
+							</div>
+
+							<div class="row mt-2">
+								<div class="col-lg-12 border rounded" style="padding: 0px;">
+								
+
+
+								</div>
+							</div>							
+
+						</div>
+						<!-- ./Conteudo -->
+					</div>
+					<!-- ./row -->
+				</div>
+			</div>
+		</main>
+		<!-- ./conteudo da pagina -->
+  	</div>
+  	<!-- ./container geral da pagina -->
+
+  	<!-- rodape -->
+    <footer class="footer ">
+		<div class="container-fluid">
+        	<span>© 2020 MPF - Ministério Publico Federal</span>
+      	</div>
+    </footer>	
+    <!-- ./rodape -->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/fontawesome.min.js"></script>
+ 	<script src="https://cdn.jsdelivr.net/npm/bs-stepper/dist/js/bs-stepper.min.js"></script>
+ 	<script>
+		$('#nav-tabs a').on('click', function (e) {
+		  e.preventDefault()
+		  $(this).tab('show')
+		})
+ 	</script>
+  </body>
+ </html>
